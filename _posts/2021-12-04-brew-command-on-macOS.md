@@ -1,6 +1,6 @@
 ---
 title:  "brew command on macOS"
-date:   2021-12-04 12:00:00
+date:   2021-12-04 12:00:00 +0100
 toc: true
 toc_sticky: true
 tags: [tools,brew]
