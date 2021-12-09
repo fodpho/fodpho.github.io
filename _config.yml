@@ -5,6 +5,8 @@ description: "A notebook for crystal clean concepts and technologies."
 baseurl: "/"
 url: "https://fodpho.github.io"
 github_username:  fodpho
+logo: "/assets/images/512x512.png"
+
 
 # Site Footer
 footer:
