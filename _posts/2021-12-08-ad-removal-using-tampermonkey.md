@@ -1,6 +1,6 @@
 ---
 title:  "ADs removal using Tampermonkey"
-date:   2021-12-08 12:00:00 +0100
+date:   2021-12-08 00:00:01
 toc: true
 toc_sticky: true
 tags: [javascript]
