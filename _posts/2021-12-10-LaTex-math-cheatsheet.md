@@ -1,6 +1,6 @@
 ---
 title:  "LaTex Math Cheatsheet"
-date:   2021-12-10 00:00:01
+date:   2021-12-10
 toc: true
 toc_sticky: true
 tags: [LaTex,cheatsheet]

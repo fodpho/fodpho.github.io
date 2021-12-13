@@ -1,6 +1,6 @@
 ---
 title:  "Using Tor on Debian"
-date:   2021-12-11 00:00:01
+date:   2021-12-11
 toc: true
 toc_sticky: true
 tags: [privacy]

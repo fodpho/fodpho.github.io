@@ -1,6 +1,6 @@
 ---
 title:  "Install TensorFlow on macOS (M1)"
-date:   2021-12-05 00:00:01
+date:   2021-12-05
 toc: true
 toc_sticky: true
 tags: [tools,tensorflow,conda]
