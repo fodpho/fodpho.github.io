@@ -7,6 +7,9 @@ url: "https://fodpho.github.io"
 github_username:  fodpho
 logo: "/assets/images/512x512.png"
 
+search                   : true
+search_full_content      : true
+search_provider          : lunr
 
 # Site Footer
 footer:
@@ -34,11 +37,8 @@ exclude:
   - .jekyll-assets-cache
   - .sass-cache
   - Capfile
-  - CHANGELOG
   - config
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
   - LICENSE
   - tmp
 keep_files:
