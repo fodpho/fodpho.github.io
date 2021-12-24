@@ -1,0 +1,269 @@
+/**
+ * Home splash picture
+ */
+.home-splash-container {
+  height: 40vh;
+  background-size: cover;
+}
+.home-splash-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+@media only screen and (min-width: 768px) {
+  .home-splash-container {
+    height: 60vh
+  }
+}
+
+/**
+ * Home page post list
+ */
+ .post-preview > a {
+  color: $brand-color-dark;
+  text-decoration: none;
+}
+.post-preview > a:hover,
+.post-preview > a:focus {
+  color: $theme-color;
+  text-decoration: none;
+}
+.post-preview > a > .post-title {
+  font-size: 21px;
+  line-height: 1.3;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.post-preview > a > .post-subtitle {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.post-preview .post-meta {
+  position: relative;
+  // font-family: serif;
+  // font-style: italic;
+  color: $brand-color-dark;
+  // margin-top: 18px;
+  font-size: 18px;
+  // padding-top: 7px;
+}
+.post-preview .post-meta span {
+  position:absolute;
+  right: 0;
+}
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .post-preview > a > .post-subtitle {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .post-preview .post-meta {
+    font-size: 16px;
+  }
+  .post-preview .post-meta span {
+    right: 12px;
+  }
+}
+.post-content-preview {
+  font-size: 13px;
+  color: $brand-color;
+}
+.post-content-preview:hover {
+  color: $theme-color;
+}
+@media only screen and (min-width: 768px) {
+  .post-content-preview {
+    font-size: 14px;
+  }
+}
+.footer > ul {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/**
+ * Non-home splash picture
+ */
+.splash-container {
+  height: 8em;
+  background-size: cover;
+}
+.splash-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+@media only screen and (min-width: 768px) {
+  .splash-container {
+    height: 16em
+  }
+  .splash-text {
+    top: 50%;
+  }
+}
+
+/**
+ * Archive post list
+ */
+ .listing-seperator {
+  font-size: 22px !important;
+}
+.listing-seperator::before {
+  margin-right: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .listing-seperator {
+    font-size: 24px !important;
+    line-height: 2 !important;
+  }
+}
+.mini-post-list {
+  margin: 20px 0 15px 0;
+}
+.mini-post-list .tag-text {
+  font-weight: 300;
+  line-height: 1.7;
+  color: $theme-color;
+}
+.mini-post-list .post-preview {
+  position: relative;
+}
+.mini-post-list .post-preview > a .post-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+.mini-post-list .post-preview > a .post-subtitle {
+  font-size: 15px;
+}
+.mini-post-list .post-preview > .post-meta {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  margin: 0px;
+  font-size: 15px;
+  line-height: 12px;
+}
+@media only screen and (min-width: 768px) {
+  .mini-post-list .post-preview {
+    margin-left: 5px;
+  }
+  .mini-post-list .post-preview > a > .post-title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .mini-post-list .post-preview > a > .post-subtitle {
+    font-size: 15px;
+  }
+  .mini-post-list .post-preview .post-meta {
+    font-size: 16px;
+  }
+}
+
+/**
+ * Posts
+ */
+.post-splash {
+  background-color: $theme-color;
+}
+.post-splash-text > h1 {
+  color: white;
+}
+.post-splash-text > p,
+.post-splash-text > span {
+  color: white;
+  font-size: 18px;
+}
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title,
+.post-content h1 {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1.15;
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(2.625);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h1, h2, h3 { margin-top: $spacing-unit * 2 }
+  h4, h5, h6 { margin-top: $spacing-unit }
+
+  h2 {
+    @include relative-font-size(1.75);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(2);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.375);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(1.625);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+  }
+
+  h5 {
+    @include relative-font-size(1.125);
+  }
+  h6 {
+    @include relative-font-size(1.0625);
+  }
+}
+
+/**
+ * TOC
+ */
+nav[data-toggle="toc"] {
+ top: 42px;
+}
+nav[data-toggle='toc'] .nav .nav {
+ display: block;
+}
+nav[data-toggle="toc"] > ul {
+  margin-left: 0;
+}
+nav[data-toggle='toc'] .nav .nav  > li > a {
+  padding-left: 10px !important;
+}
+/* small screens */
+@media (max-width: 768px) {
+ nav[data-toggle="toc"] {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   position: static;
+ }
+}
+nav[data-toggle='toc'] .nav > li > a:hover,
+nav[data-toggle='toc'] .nav-link.active,
+nav[data-toggle='toc'] .nav-link.active:focus,
+nav[data-toggle='toc'] .nav-link.active:hover,
+nav[data-toggle='toc'] .nav > li > a:focus {
+  border-left: 2.5px solid $theme-color !important;
+  color: $theme-color !important;
+}

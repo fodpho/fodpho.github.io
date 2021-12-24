@@ -1,0 +1,39 @@
+title: Crystal Title
+description: "A notebook for crystal clean concepts and technologies."
+baseurl: "/"
+url: "https://fodpho.github.io"
+github_username:  fodpho
+logo: "/assets/images/512x512.png"
+# crystal-theme:
+
+plugins:
+  - jekyll-feed
+
+include:
+  - _pages
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor
+  - .bundle
+
+
+permalink: /:title/
+
+
+markdown    : kramdown
+highlighter : rouge
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post

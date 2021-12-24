@@ -1,0 +1,85 @@
+---
+title:  "brew command on macOS"
+subtitle: "The apt for MAC."
+date:   2021-12-04
+tags: [tools,brew]
+---
+
+## Install
+
+[Homebrew](https://brew.sh) is a package manager for macOS and Linux. It can be used to install packages that are not provided by Apple or Linux. Many programming tools including Python, gcc, and android platform tools can be installed using this command. To install `brew` on macOS, open a terminal and run the command below.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+The command fetches the installation script of homebrew from the Internet by using `curl` and runs it locally to install the package.
+
+After the installation, a common practice is to add the `bin` directory of homebrew to the system PATH variable so that it can be used in the terminal. To do that, execute the following two commands.
+
+```bash
+# Add to .zprofile so the command will be executed at login time
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<USERNAME>/.zprofile
+# Run the command now so no re-login is needed
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+## Usage
+
+To see the help page, use the command
+
+```bash
+# Read help page
+man brew
+```
+
+Here are some basic usage.
+
+### Search packages
+
+```bash
+# Search packages
+% brew search emacs
+==> Formulae
+emacs                                    emacs-dracula
+emacs-clang-complete-async
+==> Casks
+homebrew/cask-versions/emacs-nightly     homebrew/cask/emacs
+homebrew/cask-versions/emacs-pretest
+```
+
+Here `Formulae` is typically non GUI applications while `Casks` is for `brew cask`, which is an extension to `brew` that allows management of macOS native applications.
+
+### Install & uninstall packages
+
+```bash
+# Install package
+brew install <package name>
+# Uninstall package
+brew uninstall <package name>
+# Install GUI package in casks
+brew install --cask <package name>
+```
+
+### List packages
+
+```bash
+# List installed packages
+brew list
+# List all formulae packages that can be installed
+brew formulae
+# List all cask packages that can be installed
+brew cask
+```
+
+### Upgrade packages
+
+```bash
+brew upgrade
+```
+
+## More Information
+
+- [https://docs.brew.sh/Installation](https://docs.brew.sh/Installation)
+- [https://docs.brew.sh/Manpage](https://docs.brew.sh/Manpage)
+- [https://explainshell.com/explain?cmd=curl+-fsSL+example.org](https://explainshell.com/explain?cmd=curl+-fsSL+example.org)

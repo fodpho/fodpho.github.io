@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% if page.splash == "home" %}
+    <div class="home-splash-container" style="background-image: url({{ page.background }});">
+        <div class="text-white text-center py-3 px-0 home-splash-text">
+            <h1 class="display-5 fw-bold text-white"> {{ page.title }} </h1>
+            <h3> {{ page.subtitle }} </h3>
+        </div>
+    </div>
+{% elsif page.splash == "small" %}
+    <div class="splash-container" style="background-image: url({{ page.background }});">
+        <div class="text-white text-center py-3 px-0 splash-text">
+            <h1 class="display-5 fw-bold text-white"> {{ page.title }} </h1>
+        </div>
+    </div>
+{% endif %}
+
+<div class="col-sm-9 col-md-8 col-lg-7 mx-auto p-3 py-md-4">
+    <main>
+        {{ content }}
+    </main>
+</div>

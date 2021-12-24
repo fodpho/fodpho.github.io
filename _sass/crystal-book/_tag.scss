@@ -1,0 +1,129 @@
+.tags {
+  margin-bottom: -5px;
+}
+.tags.tags-sup a,
+.tags.tags-sup .tag {
+  padding: 0 10px 0 12px;
+}
+.tags a,
+.tags .tag {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 999em;
+  padding: 0 10px 0 10px;
+  color: $brand-color-dark;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tags a > sup,
+.tags .tag > sup {
+  margin-left: -2px;
+  font-weight: 700;
+}
+.tags a:hover,
+.tags .tag:hover,
+.tags a:active,
+.tags .tag:active {
+  color: white;
+  border-color: white;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .tags a,
+  .tags .tag {
+    margin-right: 5px;
+  }
+}
+
+.home-tags {
+  margin-bottom: 0px !important;
+}
+
+#tag-heading {
+  padding: 70px 0 60px;
+}
+@media only screen and (min-width: 768px) {
+  #tag-heading {
+    padding: 55px 0;
+  }
+}
+
+#tag_cloud a,
+#tag_cloud .tag {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  font-size: 14px;
+  border: none;
+  line-height: 28px;
+  margin: 0 2px;
+  margin-bottom: 10px;
+  background: $theme-gray;
+}
+#tag_cloud a:hover,
+#tag_cloud .tag:hover,
+#tag_cloud a:active,
+#tag_cloud .tag:active,
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
+  color: white;
+  background: $theme-color !important;
+}
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
+}
+#tag_cloud a.tag-button--all,
+#tag_cloud .tag.tag-button--all {
+  font-weight: 700;
+  color: darken($theme-color, 8%);
+}
+#tag_cloud a.tag-button--all:hover,
+#tag_cloud .tag.tag-button--all:hover,
+#tag_cloud a.tag-button--all:active,
+#tag_cloud .tag.tag-button--all:active,
+#tag_cloud a.tag-button--all.focus,
+#tag_cloud .tag.tag-button--all.focus {
+  color: white;
+  background: $theme-color !important;
+}
+@media only screen and (min-width: 768px) {
+  #tag_cloud {
+    margin-bottom: 25px;
+  }
+}
+
+#home_tag_cloud a,
+#home_tag_cloud .tag {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  font-size: 14px;
+  border: none;
+  line-height: 28px;
+  margin-bottom: 5px;
+  background: $theme-gray;
+}
+#home_tag_cloud a:hover,
+#home_tag_cloud .tag:hover,
+#home_tag_cloud a:active,
+#home_tag_cloud .tag:active,
+#home_tag_cloud a.focus,
+#home_tag_cloud .tag.focus {
+  color: white;
+  background: $theme-color !important;
+}
+#home_tag_cloud a.tag-button--all,
+#home_tag_cloud .tag.tag-button--all {
+  font-weight: 700;
+  color: #1a547f;
+}
+#home_tag_cloud a.tag-button--all:hover,
+#home_tag_cloud .tag.tag-button--all:hover,
+#home_tag_cloud a.tag-button--all:active,
+#home_tag_cloud .tag.tag-button--all:active {
+  color: white;
+  background: $theme-color !important;
+}
