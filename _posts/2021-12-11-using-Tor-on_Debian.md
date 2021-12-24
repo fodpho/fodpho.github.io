@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 tags: [privacy]
 ---
- 
+
 
 Although the recommended way to access Tor network is through Tor browser, it is possible to set Tor on Linux and use it as a proxy.
 
@@ -28,7 +28,7 @@ On Debian based distros, install Tor using the following command.
 sudo apt install tor
 ```
 
-Edit `/etc/tor/torrc`, uncomment the line `SocksPort 9050`, 9050 here is the port opened by Tor, it can be changed to other values. Save the file and the tor service can be started. To monitor the status of the service, the command `journalctl` can be used. Type the following command in the terminal. It will show the system journal containing the word `bootstrapped` in real time. 
+Edit `/etc/tor/torrc`, uncomment the line `SocksPort 9050`, 9050 here is the port opened by Tor, it can be changed to other values. Save the file and the tor service can be started. To monitor the status of the service, the command `journalctl` can be used. Type the following command in the terminal. It will show the system journal containing the word `bootstrapped` in real time.
 
 ```bash
 sudo journalctl -f -u tor@default | grep bootstrapped -i
