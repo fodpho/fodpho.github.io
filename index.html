@@ -26,7 +26,7 @@ subtitle: "Would you like a cup of tea?"
         <div class="row col-sm-12 mt-3 pb-0">
           <div id='home_tag_cloud' class="tags home-tags col-6">
             {% for tag in post.tags %}
-              {% assign tag_url = "/archive/?tag=" | append: tag %}
+              {% assign tag_url = "/archive?tag=" | append: tag %}
               <a class="tag-button" title="{{ tag }}" href="{{ tag_url }}"> {{ tag }} </a>
             {% endfor %}
           </div>
