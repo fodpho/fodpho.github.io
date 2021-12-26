@@ -246,11 +246,11 @@ nav[data-toggle='toc'] .nav .nav {
  display: block;
 }
 nav[data-toggle="toc"] > ul {
-  margin-left: 0;
+  margin-left: 10px;
 }
-nav[data-toggle='toc'] .nav .nav  > li > a {
-  padding-left: 10px !important;
-}
+// nav[data-toggle='toc'] .nav .nav  > li > a {
+  // padding-left: px !important;
+// }
 /* small screens */
 @media (max-width: 768px) {
  nav[data-toggle="toc"] {
