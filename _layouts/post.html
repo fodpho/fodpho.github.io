@@ -22,7 +22,7 @@ layout: default
             <div id='home_tag_cloud' class="tags home-tags col-6">
                 <span> <b> Tags: </b> </span>
                 {% for tag in page.tags %}
-                    {% assign tag_url = "/archive/?tag=" | append: tag %}
+                    {% assign tag_url = "/archive?tag=" | append: tag %}
                     <a class="tag-button" title="{{ tag }}" href="{{ tag_url }}"> {{ tag }} </a>
                 {% endfor %}
             </div>
